@@ -1,0 +1,202 @@
+.input-styles{
+    border: unset;
+    width: -webkit-fill-available;
+    border-radius: 100px;
+    background: linear-gradient(.25turn, #CB2E2F, #CB2E2F33);
+    padding: 16px 24px 16px 24px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: "Raleway";
+}
+::placeholder{
+  color: white;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+textarea {
+    resize: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  .btn{
+    border-radius: 100px;
+    padding: 12px 24px 12px 24px;
+    background-color: black;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .btn:hover{
+    background-color: rgb(36, 36, 36);
+  }
+  .response-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 643px;
+    padding: 0 15px;
+}
+
+.response-form__name_email {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 10px;
+    gap: 10px; 
+}
+
+.response-form__name,
+.response-form__email {
+    flex: 1; 
+    min-width: calc(50% - 10px); 
+}
+
+.response-form__phone,
+.response-form__cv-file,
+.response-form__add-text,
+.response-form__payment {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.response-form__button button{
+    border: none;
+}
+.response-form__button a{
+    text-decoration: none;
+}
+.response-form__button{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+.response-form__cv-file > div {
+    margin-bottom: 10px;
+    background: linear-gradient(.25turn, #CB2E2F, #CB2E2F33);
+    margin-top: 10px;
+    display: flex;
+    border-radius: 100px;
+    padding: 16px 24px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    gap: 10px;
+}
+
+.response-form__cv-file div:first-child {
+    font-family: 'Raleway';
+    font-size: 24px;
+    color: white;
+}
+
+.response-form__send-button {
+    border-radius: 100px;
+    padding: 16px 24px;
+    background-color: #CB2E2F;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Raleway";
+    transition: transform 0.2s, box-shadow 0.2s;
+
+}
+
+.response-form__send-button2{
+    border-radius: 100px;
+    padding: 16px 24px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Raleway";
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.response-form__send-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.response-form__send-button2:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 768px) {
+    .response-form {
+        max-width: 100%;
+    }
+
+    .response-form__name_email {
+        gap: 10px;
+    }
+
+    .response-form__name,
+    .response-form__email {
+        min-width: 100%; 
+    }
+
+    .response-form__cv-file > div {
+        flex-wrap: wrap;
+        padding: 12px 16px;
+    }
+
+    .response-form__send-button {
+        padding: 16px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .response-form__button{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .response-form {
+        padding: 0 10px;
+    }
+
+    .response-form__name_email {
+        flex-direction: column; 
+    }
+
+    .response-form__name,
+    .response-form__email {
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+
+    .response-form__cv-file > div {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .response-form__send-button {
+        padding: 12px 20px;
+        font-size: 18px;
+    }
+}
+@media (max-width: 320px){
+    .response-form__cv-file > div {
+        border-radius: 12px;
+    }
+}
